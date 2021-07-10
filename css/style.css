@@ -1,1 +1,58 @@
-/* No CSS */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #9715ad;
+}
+
+#wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.content_block1, .content__sidebar, .content_block2 {
+  width: 93.75%;
+  min-height: 33.33333vh;
+  border: 1px solid black;
+  background-color: #466397;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+}
+
+@media (min-width: 580px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0px -20px 0px 10px;
+  }
+  .content_block1, .content__sidebar {
+    width: 31.25%;
+    min-height: 33.33333vh;
+    margin: 0px 0px 0px 0px;
+  }
+  .content_block2 {
+    width: 31.25%;
+    min-height: 33.33333vh;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.content__sidebar {
+  background-color: #9715ad;
+  min-height: 16.66667vh;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 580px) {
+  .content__sidebar {
+    width: 31.25%;
+    min-height: 33.33333vh;
+    margin: 0px 0px 0px 10px;
+  }
+}
